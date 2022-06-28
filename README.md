@@ -6,3 +6,15 @@ U folderu Server Side/BankomSlikeArtikli imamo file koji se zove appsettings.jso
 U DbConnectionString treba da definisemo IP adresu racunara na kom je podignut sql server, kao i ime korisnika i password.
 
 U StorageLocation treba da definisemo putanju gde ce se skladistiti slike.
+
+Na serverskoj strani u Properties > launchSettings.json neophodno je da izmenimo liniju:
+
+"applicationUrl": "https://localhost:5001;http://localhost:5000;https://192.168.0.23:6000;http://192.168.0.23:6001;",
+
+Treba da definisemo nasu IP adresu racunara na kom pokrecemo serversku stranu.
+
+Na klijentskoj strani u RetrofitClientInstance imamo liniju:
+
+private static final String BASE_URL_API = "https://192.168.0.23:6000/";
+
+Treba da definisemo IP adresu racunara na kom pokrecemo serversku stranu.
