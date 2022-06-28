@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Bankom Artikli</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="create_an_account"><b><u>Create an Account</u></b></string>
+    <string name="login"><b><u>Login</u></b></string>
+    <string name="login_header"><b>LOGIN</b></string>
+    <string name="btn_login"><b>Login</b></string>
+    <string name="users">Users</string>
+    <string name="admin"><b>Admin</b></string>
+    <string name="brisanje_korisnika">Brisanje korisnika</string>
+    <string name="sacuvaj_korisnika">Sačuvaj korisnika</string>
+    <string name="izaberi_artikal">Izaberi Artikal</string>
+    <string name="slika_artikla">Slika Artikla</string>
+    <string name="upload">Upload</string>
+    <string name="or"><b>======== OR =========</b></string>
+    <string name="new_account"><b>NEW ACCOUNT</b></string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="create">CREATE</string>
+    <string name="izaberi_korisnika">Izaberi Korisnika</string>
+
+</resources>
