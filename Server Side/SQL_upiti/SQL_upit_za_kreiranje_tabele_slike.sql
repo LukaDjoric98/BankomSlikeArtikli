@@ -1,0 +1,30 @@
+USE [Fajlovi]
+GO
+
+/****** Object:  Table [dbo].[Slike]    Script Date: 28.06.22 13:04:37 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Slike](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Put] [nvarchar](max) NOT NULL,
+	[Naziv] [nvarchar](max) NOT NULL,
+	[ArtikalId] [int] NOT NULL,
+ CONSTRAINT [PK_Slike] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Slike]  WITH CHECK ADD  CONSTRAINT [FK_Slike_Artikli] FOREIGN KEY([ArtikalId])
+REFERENCES [dbo].[Artikli] ([ID_Artikli])
+GO
+
+ALTER TABLE [dbo].[Slike] CHECK CONSTRAINT [FK_Slike_Artikli]
+GO
+
+
