@@ -18,3 +18,5 @@ Na klijentskoj strani u RetrofitClientInstance imamo liniju:
 private static final String BASE_URL_API = "https://192.168.0.23:6000/";
 
 Treba da definisemo IP adresu racunara na kom pokrecemo serversku stranu.
+
+Kada registrujete prvog korisnika neophodno je da u bazi promenite njegovu rolu na Admin kako bi mogli da otkljucate sve funkcionalnosti aplikacije.
